@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QuiteRelease - Your Anonymous Venting Space | Create</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/create.min.css'>
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon.ico">
+</head>
+<body class="bg-primary-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fade-down">
+            <div class="container fade-down-contents">
+                <a class="navbar-brand fw-bold" href="./index.html">QuiteRelease</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start bg-primary text-white" id="navbarOffcanvas">
+                    <div class="offcanvas-header border-bottom border-secondary">
+                        <h5 class="offcanvas-title">QuiteRelease</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-start justify-content-lg-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./create.html">Create</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./vents.html">Vents</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="toast-container position-fixed bottom-0 end-0 m-3">
+        <div class="toast" id="mainToast">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="form py-3 py-sm-5 bg-primary-subtle">
+            <div class="container">
+                <div class="shadow p-3 rounded-4 border border-primary-subtle">
+                    <h3 class="line">Create Post</h3>
+                    <form id="mainForm" novalidate>
+                        <p>Pour your heart out - start typing your vent.</p>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" style="min-height: 400px;" name="message" id="message" placeholder="" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="d-flex flex-row gap-2">
+                            <button type="submit" class="btn btn-primary text-white">
+                                Post
+                            </button>
+                            <a href="#rules" class="btn btn-secondary text-white">Rules</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules py-5 bg-secondary-subtle" id="rules">
+            <div class="container fade-up">
+                <h3>Rules</h3>
+                <ol class="d-flex flex-column gap-3 line">
+                    <li><i>Respectful Language:</i> Ensure that all vent posts use respectful and non-abusive language. Discourage any form of hate speech, harassment, or bullying.</li>
+                    <li><i>No Personal Attacks:</i> Prohibit personal attacks or targeting of individuals. Encourage users to focus on expressing their own feelings rather than blaming or attacking others.</li>
+                    <li><i>Privacy Considerations:</i> Remind users not to share personally identifiable information, either their own or that of others. Emphasize the importance of maintaining anonymity.</li>
+                    <li><i>Content Sensitivity:</i> While the platform is for expressing emotions, set guidelines on avoiding extremely graphic or triggering content. Encourage users to issue content warnings if their vents contain sensitive material.</li>
+                    <li><i>Empathy and Support:</i> Encourage a culture of empathy and support. Remind users that they are not alone and that the community is here to listen and provide support.</li>
+                    <li><i>Legal and Ethical Guidelines:</i> Make it clear that posts must adhere to legal and ethical standards. Prohibit any content that promotes harm, self-harm, or illegal activities.</li>
+                    <li><i>Stay on Topic:</i> Request that vent posts remain relevant to the purpose of the platform. Off-topic or spammy content may be removed to maintain the quality of the community.</li>
+                    <li><i>No Promotions or Advertisements:</i> Discourage users from using the platform for self-promotion or advertising. This ensures the focus remains on emotional expression and support.</li>
+                    <li><i>Moderation Decisions:</i> Communicate that moderators have the right to remove posts that violate the rules. Provide a system for users to report inappropriate content.</li>
+                    <li><i>Positive Engagement:</i> Encourage users to engage positively with each other's vents. Constructive feedback and words of support are welcome, but discourage negative or dismissive comments.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-3 py-sm-4">
+        <div class="container">
+            <div class="d-flex flex-row gap-3 justify-content-center">
+                <a href="https://getbootstrap.com/" target="_blank"><i class="bi bi-bootstrap-fill fs-1 text-white"></i></a>
+                <a href="https://getbootstrap.com/" target="_blank"><i class="bi bi-github fs-1 text-white"></i></a>
+            </div>
+            <hr>
+            <div class="d-flex flex-column align-items-center">
+                <small>&copy; 2023 QuiteRelease</small>
+                <small class="opacity-50">Made by Ch4rlzki</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="./assets/js/create.bundle.js"></script>
+</body>
+</html>

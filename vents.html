@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QuiteRelease - Your Anonymous Venting Space | Vents</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/vents.min.css'>
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon.ico">
+</head>
+<body class="bg-primary-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fade-down">
+            <div class="container fade-down-contents">
+                <a class="navbar-brand fw-bold" href="./index.html">QuiteRelease</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start bg-primary text-white" id="navbarOffcanvas">
+                    <div class="offcanvas-header border-bottom border-secondary">
+                        <h5 class="offcanvas-title">QuiteRelease</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-start justify-content-lg-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./create.html">Create</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./vents.html">Vents</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="toast-container position-fixed bottom-0 end-0 m-3">
+        <div class="toast" id="mainToast">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="vents py-3 py-sm-5 bg-primary-subtle">
+            <div class="container">
+                <h3 class="mb-3">Vents</h3>
+                <div class="d-flex flex-column gap-2" id="ventsContainer">
+
+                    <div class="card">
+                        <div class="card-header placeholder-glow">
+                            <small class="opacity-75">
+                                <span class="placeholder col-5"></span>
+                            </small>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-10"></span>
+                            <span class="placeholder col-8"></span>
+                            <span class="placeholder col-6"></span>
+                        </div>
+                        <div class="card-footer border-top">
+                            <button type="button" class="btn btn-primary" disabled>Comments</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header placeholder-glow">
+                            <small class="opacity-75">
+                                <span class="placeholder col-5"></span>
+                            </small>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-10"></span>
+                            <span class="placeholder col-8"></span>
+                            <span class="placeholder col-6"></span>
+                        </div>
+                        <div class="card-footer border-top">
+                            <button type="button" class="btn btn-primary" disabled>Comments</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header placeholder-glow">
+                            <small class="opacity-75">
+                                <span class="placeholder col-5"></span>
+                            </small>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-10"></span>
+                            <span class="placeholder col-8"></span>
+                            <span class="placeholder col-6"></span>
+                        </div>
+                        <div class="card-footer border-top">
+                            <button type="button" class="btn btn-primary" disabled>Comments</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header placeholder-glow">
+                            <small class="opacity-75">
+                                <span class="placeholder col-5"></span>
+                            </small>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-10"></span>
+                            <span class="placeholder col-8"></span>
+                            <span class="placeholder col-6"></span>
+                        </div>
+                        <div class="card-footer border-top">
+                            <button type="button" class="btn btn-primary" disabled>Comments</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header placeholder-glow">
+                            <small class="opacity-75">
+                                <span class="placeholder col-5"></span>
+                            </small>
+                        </div>
+                        <div class="card-body placeholder-glow">
+                            <span class="placeholder col-10"></span>
+                            <span class="placeholder col-8"></span>
+                            <span class="placeholder col-6"></span>
+                        </div>
+                        <div class="card-footer border-top">
+                            <button type="button" class="btn btn-primary" disabled>Comments</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="ventCommentsContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-body py-3 py-sm-4">
+        <div class="container">
+            <div class="d-flex flex-row gap-3 justify-content-center">
+                <a href="https://getbootstrap.com/" target="_blank"><i class="bi bi-bootstrap-fill fs-1"></i></a>
+                <a href="https://getbootstrap.com/" target="_blank"><i class="bi bi-github fs-1"></i></a>
+            </div>
+            <hr>
+            <div class="d-flex flex-column align-items-center">
+                <small>&copy; 2023 QuiteRelease</small>
+                <small class="opacity-50">Made by Ch4rlzki</small>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="./assets/js/vents.bundle.js"></script>
+</body>
+</html>
