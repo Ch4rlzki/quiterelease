@@ -33,7 +33,7 @@ getDocs(postsCol).then((res) => {
             </div>
         </div>`;
 
-        ventCommentsContainer.innerHTML += `<div class="offcanvas offcanvas-end bg-secondary text-white" id="${id}">
+        ventCommentsContainer.innerHTML += `<div class="offcanvas offcanvas-start bg-secondary text-white" id="${id}">
             <div class="offcanvas-header border-bottom border-primary">
                 <h6 class="offcanvas-title">Comments</h6>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
